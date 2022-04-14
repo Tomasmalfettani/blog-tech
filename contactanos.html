@@ -62,42 +62,71 @@
         <section class="container">
             <div class="row shadow p-3 mt-5 mb-5 bg-body rounded">
                 <div class="col-md-12 p-4 text-center">
-                    <hq class="display-3">Contactanos</h1>
+                    <hq class="display-3">Registrarse</h1>
                 </div>
             </div>
-            <div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Mail</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="nombre@ejemplo.com">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="validationDefault01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
                 </div>
-                <div class="mb-3">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-                    <div class="col-sm-12">
-                        <input type="password" class="form-control" id="inputPassword">
+                <div class="col-md-6">
+                    <label for="validationDefault02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationDefault01" class="form-label">Mail</label>
+                    <input type="email" class="form-control" id="validationDefault01" value="" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationDefault02" class="form-label">Confirmar Mail</label>
+                    <input type="email" class="form-control" id="validationDefault02" value="" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationDefault01" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="validationDefault01" value="" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationDefault02" class="form-label">Confirmar Contraseña</label>
+                    <input type="password" class="form-control" id="validationDefault02" value="" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="formFile" class="form-label">Documento frente</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="col-md-6">
+                    <label for="formFile" class="form-label">Documento dorso</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="col-md-6">
+                    <label for="validationDefaultUsername" class="form-label">Usuario</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                        <input type="text" class="form-control" id="validationDefaultUsername"
+                            aria-describedby="inputGroupPrepend2" required>
                     </div>
                 </div>
-            </div>
-            <div class="mb-3">
-                <label for="formFile" class="form-label">Default file input example</label>
-                <input class="form-control" type="file" id="formFile">
-              </div>
-              <div class="mb-3">
-                <label for="formFileMultiple" class="form-label">Multiple files input example</label>
-                <input class="form-control" type="file" id="formFileMultiple" multiple>
-              </div>
-              <div class="mb-3">
-                <label for="formFileDisabled" class="form-label">Disabled file input example</label>
-                <input class="form-control" type="file" id="formFileDisabled" disabled>
-              </div>
-              <div class="mb-3">
-                <label for="formFileSm" class="form-label">Small file input example</label>
-                <input class="form-control form-control-sm" id="formFileSm" type="file">
-              </div>
-              <div>
-                <label for="formFileLg" class="form-label">Large file input example</label>
-                <input class="form-control form-control-lg" id="formFileLg" type="file">
-              </div>
+                <div class="col-md-6">
+                    <label for="validationDefault03" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-mb-12">
+                    <label for="exampleFormControlInput1" class="form-label">Billetera cripto</label>
+                    <input type="text" class="form-control" placeholder="Opcional">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                            Agree to terms and conditions
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-success" type="submit">Completar Registro</button>
+                </div>
+            </form>
+
         </section>
     </main>
 
